@@ -36,7 +36,7 @@
 		function benchmark(){
 			/*Runs a benchmark test of generating circles with Easel v with pure Canvas
 			*/
-			var count=10;
+			var count=100;
 			var trials=10;
 			var ctx=canvas.getContext("2d");
 			easelTime=0;
@@ -80,7 +80,7 @@
 					gradient.addColorStop(0,Graphics.getRGB(Math.floor(Math.random()*255),Math.floor(Math.random()*255),Math.floor(Math.random()*255)));
 					gradient.addColorStop(1,Graphics.getRGB(Math.floor(Math.random()*255),Math.floor(Math.random()*255),Math.floor(Math.random()*255)));
 
-					ctx.fillStyle=Graphics.getRGB(Math.floor(Math.random()*255),Math.floor(Math.random()*255),Math.floor(Math.random()*255),Math.random());
+					ctx.fillStyle=gradient;
 					ctx.beginPath();
 					ctx.arc(x,y,r,0,2*Math.PI,true);
 					ctx.closePath();
