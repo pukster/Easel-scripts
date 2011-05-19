@@ -1,0 +1,10 @@
+This is a simple performance test using EaselJS (untagged version as of May 18, 2011)
+
+This is the second performance test I have made for EaselJS. The first one focused on individual aspects of Easel, for example:
+-Are containers expensive?
+-Is caching efficient?
+-Does Easel scale well?
+
+Unfortunately, I have come to realize that Easel is not as efficient as the canvas alone. For example, in canvas, previously, I was able to render hundreds of boxes, each with rollover effects. Here, even with 9 boxes and 9 circles there appears to be a delay. I don't know if this is b/c I am using shadows here, or if Easel is genuinely slow. The purpose of this perormance test is to evaluate this.
+
+
